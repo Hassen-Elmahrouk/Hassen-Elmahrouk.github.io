@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 50%;
+        }
+        .container{
+            display: flex;
+            flex-direction: row-reverse;
+            /* justify-content: space-between; */
+        }
+        .child {
+            background-color: red;
+            color:#fff;
+            min-width:100px;
+            flex:1;
+            /* margin-inline: 50px; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+
+        <div class="container">
+            <div class="child">child1</div>
+            <div class="child">bla</div>
+            <div class="child" id="last">bla</div>
+        </div>
+    </div>
+</body>
+</html>
